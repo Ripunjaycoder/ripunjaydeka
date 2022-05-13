@@ -50,7 +50,7 @@
       <input type="submit" name="submit" value="Submit">
       <?php 
         if(isset($_POST['submit']) && !isset($name_error) && !isset($subject_error) && !isset($email_error) && !isset($message_error)){
-          $to = 'ripunjaydeka2021@gmail.com'; // edit here
+           'ripunjaydeka2021@gmail.com' ; // edit here
           $body = " Name: $name\n E-mail: $email\n Message:\n $message";
           if(mail($to, $subject, $body)){
             echo '<p style="color: green">Message sent</p>';
